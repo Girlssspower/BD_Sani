@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="691.0" prefWidth="1000.0" style="-fx-background-color: #C4C4C4;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.redact_sotrudController">
+   <children>
+      <ImageView fx:id="fat_line" fitHeight="563.0" fitWidth="1009.0" layoutX="-5.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@sources/second_palka_5.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="thin_line" fitHeight="466.0" fitWidth="1009.0" layoutX="-1.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@sources/first_palka_5.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="redaction" layoutX="332.0" layoutY="486.0" mnemonicParsing="false" onAction="#redact_sotrud" prefHeight="47.0" prefWidth="335.0" style="-fx-background-radius: 50; -fx-border-radius: 50; -fx-background-color: #AF9D8B;" text="Редактировать" textFill="WHITE">
+         <font>
+            <Font name="Microsoft YaHei Light" size="30.0" />
+         </font>
+      </Button>
+      <TextField fx:id="surname" layoutX="92.0" layoutY="97.0" prefHeight="40.0" prefWidth="265.0" promptText="фамилия" style="-fx-border-color: &quot;transparent&quot; &quot;transparent&quot; &quot;white&quot; &quot;transparent&quot;; -fx-text-fill: white; -fx-prompt-text-fill: &quot;white&quot;; -fx-border-width: 2; -fx-background-color: transparent;">
+         <font>
+            <Font name="Microsoft YaHei Light" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="name" layoutX="92.0" layoutY="157.0" prefHeight="40.0" prefWidth="265.0" promptText="имя" style="-fx-border-color: &quot;transparent&quot; &quot;transparent&quot; &quot;white&quot; &quot;transparent&quot;; -fx-text-fill: white; -fx-prompt-text-fill: white; -fx-border-width: 2; -fx-background-color: transparent;">
+         <font>
+            <Font name="Microsoft YaHei Light" size="20.0" />
+         </font>
+      </TextField>
+      <Label fx:id="regist_text" layoutX="148.0" layoutY="32.0" text="Редактировать информацию о сотруднике" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Corbel Bold" size="36.0" />
+         </font>
+         <effect>
+            <InnerShadow height="1.0" radius="0.0" width="0.0">
+               <color>
+                  <Color opacity="0.0" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Label>
+      <DatePicker fx:id="birth_date" layoutX="92.0" layoutY="275.0" prefHeight="40.0" prefWidth="265.0" promptText="дата рождения" style="-fx-prompt-text-fill: white;" stylesheets="@sources/css.css" />
+      <TextField fx:id="last_name" layoutX="92.0" layoutY="216.0" prefHeight="40.0" prefWidth="265.0" promptText="отчество" style="-fx-border-color: &quot;transparent&quot; &quot;transparent&quot; &quot;white&quot; &quot;transparent&quot;; -fx-text-fill: white; -fx-prompt-text-fill: white; -fx-border-width: 2; -fx-background-color: transparent;">
+         <font>
+            <Font name="Microsoft YaHei Light" size="20.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="dolzhnost" layoutX="92.0" layoutY="332.0" prefHeight="40.0" prefWidth="265.0" promptText="должность" style="-fx-background-color: transparent;" stylesheets="@sources/css.css" />
+      <ImageView fx:id="birth_date_image" fitHeight="33.0" fitWidth="37.0" layoutX="324.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@sources/calendar.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="telephone" layoutX="663.0" layoutY="275.0" prefHeight="40.0" prefWidth="265.0" promptText="контактный телефон" style="-fx-border-color: &quot;transparent&quot; &quot;transparent&quot; &quot;white&quot; &quot;transparent&quot;; -fx-text-fill: white; -fx-prompt-text-fill: &quot;white&quot;; -fx-border-width: 2; -fx-background-color: transparent;">
+         <font>
+            <Font name="Microsoft YaHei Light" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="email" layoutX="663.0" layoutY="216.0" prefHeight="40.0" prefWidth="265.0" promptText="e-mail" style="-fx-border-color: &quot;transparent&quot; &quot;transparent&quot; &quot;white&quot; &quot;transparent&quot;; -fx-text-fill: white; -fx-prompt-text-fill: &quot;white&quot;; -fx-border-width: 2; -fx-background-color: transparent;">
+         <font>
+            <Font name="Microsoft YaHei Light" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="education" layoutX="663.0" layoutY="151.0" prefHeight="40.0" prefWidth="265.0" promptText="образование" style="-fx-border-color: &quot;transparent&quot; &quot;transparent&quot; &quot;white&quot; &quot;transparent&quot;; -fx-text-fill: white; -fx-prompt-text-fill: &quot;white&quot;; -fx-border-width: 2; -fx-background-color: transparent;">
+         <font>
+            <Font name="Microsoft YaHei Light" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="passport_data" layoutX="663.0" layoutY="91.0" prefHeight="40.0" prefWidth="265.0" promptText="паспортные данные" style="-fx-border-color: &quot;transparent&quot; &quot;transparent&quot; &quot;white&quot; &quot;transparent&quot;; -fx-text-fill: white; -fx-prompt-text-fill: &quot;white&quot;; -fx-border-width: 2; -fx-background-color: transparent;">
+         <font>
+            <Font name="Microsoft YaHei Light" size="20.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="status" layoutX="663.0" layoutY="332.0" prefHeight="40.0" prefWidth="265.0" promptText="статус" style="-fx-background-color: transparent;" stylesheets="@sources/css.css" />
+      <Button fx:id="back_to_menu" layoutX="26.0" layoutY="26.0" mnemonicParsing="false" onAction="#back_to_menu" prefHeight="42.0" prefWidth="47.0" style="-fx-background-color: transparent;" />
+      <ImageView fx:id="purple_arrow" fitHeight="33.0" fitWidth="47.0" layoutX="28.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@sources/purple_back.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

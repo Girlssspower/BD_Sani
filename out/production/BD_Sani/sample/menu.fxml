@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="691.0" prefWidth="1000.0" style="-fx-background-color: #C4C4C4;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.menuController">
+   <children>
+      <ImageView fx:id="fat_line" fitHeight="300.0" fitWidth="1079.0" layoutY="-39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@sources/second_palka_2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="thin_line" fitHeight="224.0" fitWidth="1064.0" layoutX="-32.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@sources/first_palka_2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="rooms" layoutX="361.0" layoutY="361.0" mnemonicParsing="false" onAction="#go_rooms" prefHeight="63.0" prefWidth="300.0" style="-fx-background-radius: 50; -fx-border-radius: 50; -fx-background-color: #AF9D8B;" text="Номера" textFill="WHITE">
+         <font>
+            <Font name="Microsoft YaHei Light" size="30.0" />
+         </font>
+      </Button>
+      <Label fx:id="fio" layoutX="693.0" layoutY="24.0" text="Фамилия Имя Отчество" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Microsoft YaHei Light" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="otchety" layoutX="361.0" layoutY="459.0" mnemonicParsing="false" onAction="#go_otchety" prefHeight="63.0" prefWidth="300.0" style="-fx-background-radius: 50; -fx-border-radius: 50; -fx-background-color: #AF9D8B;" text="Отчёты" textFill="WHITE">
+         <font>
+            <Font name="Microsoft YaHei Light" size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="redact" layoutX="833.0" layoutY="69.0" mnemonicParsing="false" onAction="#go_redact" prefHeight="48.0" prefWidth="50.0" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@sources/pen.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="add" layoutX="897.0" layoutY="69.0" mnemonicParsing="false" onAction="#go_add" prefHeight="48.0" prefWidth="50.0" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@sources/plus.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="exit" layoutX="8.0" layoutY="10.0" mnemonicParsing="false" onAction="#go_authorization" prefHeight="63.0" prefWidth="64.0" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="56.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@sources/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

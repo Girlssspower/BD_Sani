@@ -1,0 +1,128 @@
+.date-picker .text-field {
+    -fx-control-inner-background: white ;
+    -fx-prompt-text-fill: white;
+    -fx-background-color: transparent;
+    -fx-font-family: "Microsoft JhengHei Light";
+    -fx-font-size: 20;
+    -fx-text-fill: "white";
+}
+.date-picker:focused {
+    -fx-background-color: transparent;
+    -fx-border-color:  "transparent" "transparent" "white" "transparent";
+    -fx-border-width: 2;
+    -fx-font-family: "Microsoft JhengHei Light";
+    -fx-font-size: 20;
+    -fx-text-fill: "white";
+}
+.date-picker {
+    -fx-background-color: transparent;
+    -fx-border-color:  "transparent" "transparent" "white" "transparent";
+    -fx-border-width: 2;
+    -fx-font-family: "Microsoft JhengHei Light";
+    -fx-font-size: 20;
+    -fx-text-fill: "white";
+}
+.date-picker > .arrow-button {
+    -fx-background-color: transparent;
+    -fx-opacity: 0; /* Set the node in the button to be visible */
+}
+
+
+
+
+
+
+.combo-box:focused {
+    -fx-background-color: transparent;
+    -fx-border-color:  "transparent" "transparent" "white" "transparent";
+    -fx-border-width: 2;
+    -fx-font-family: "Microsoft JhengHei Light";
+    -fx-font-size: 20;
+        -fx-text-fill: white;
+
+}
+.combo-box{
+    -fx-background-color: transparent;
+    -fx-border-color:  "transparent" "transparent" "white" "transparent";
+    -fx-border-width: 2;
+    -fx-font-family: "Microsoft JhengHei Light";
+    -fx-font-size: 20;
+    -fx-text-fill: white;
+
+}
+.combo-box .list-cell{
+    -fx-text-fill: white;
+}
+
+.combo-box .arrow{
+    -fx-background-color:"white";
+}
+
+
+
+
+#go .text-field {
+    -fx-control-inner-background: white ;
+    -fx-prompt-text-fill: white;
+    -fx-background-color: transparent;
+    -fx-font-family: "Microsoft JhengHei Light";
+    -fx-font-size: 18;
+    -fx-text-fill: "white";
+}
+#go:focused {
+    -fx-background-color: transparent;
+    -fx-border-color:  "transparent" "transparent" "white" "transparent";
+    -fx-border-width: 2;
+    -fx-font-family: "Microsoft JhengHei Light";
+    -fx-font-size: 18;
+    -fx-text-fill: "white";
+}
+#go {
+    -fx-background-color: transparent;
+    -fx-border-color:  "transparent" "transparent" "white" "transparent";
+    -fx-border-width: 2;
+    -fx-font-family: "Microsoft JhengHei Light";
+    -fx-font-size: 18;
+    -fx-text-fill: "white";
+}
+#go > .arrow-button {
+    -fx-background-color: transparent;
+    -fx-opacity: 0; /* Set the node in the button to be visible */
+}
+
+
+
+
+
+
+#leave .text-field {
+    -fx-control-inner-background: white ;
+    -fx-prompt-text-fill: white;
+    -fx-background-color: transparent;
+    -fx-font-family: "Microsoft JhengHei Light";
+    -fx-font-size: 18;
+    -fx-text-fill: "white";
+}
+#leave:focused {
+    -fx-background-color: transparent;
+    -fx-border-color:  "transparent" "transparent" "white" "transparent";
+    -fx-border-width: 2;
+    -fx-font-family: "Microsoft JhengHei Light";
+    -fx-font-size: 18;
+    -fx-text-fill: "white";
+}
+#leave {
+    -fx-background-color: transparent;
+    -fx-border-color:  "transparent" "transparent" "white" "transparent";
+    -fx-border-width: 2;
+    -fx-font-family: "Microsoft JhengHei Light";
+    -fx-font-size: 18;
+    -fx-text-fill: "white";
+}
+#leave > .arrow-button {
+    -fx-background-color: transparent;
+    -fx-opacity: 0; /* Set the node in the button to be visible */
+}
+
+
+
