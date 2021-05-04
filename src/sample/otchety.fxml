@@ -79,7 +79,6 @@
             </InnerShadow>
          </effect>
       </Label>
-      <ComboBox fx:id="period" layoutX="124.0" layoutY="427.0" prefHeight="40.0" prefWidth="200.0" promptText="период" style="-fx-background-color: transparent;" stylesheets="@sources/css.css" />
       <Label fx:id="year" layoutX="336.0" layoutY="427.0" text="2048557684" textFill="WHITE">
          <font>
             <Font name="Corbel Bold" size="36.0" />
@@ -140,5 +139,6 @@
             </InnerShadow>
          </effect>
       </Label>
+      <ComboBox fx:id="period" layoutX="124.0" layoutY="427.0" prefHeight="40.0" prefWidth="200.0" promptText="период" style="-fx-background-color: transparent;" stylesheets="@sources/css.css" />
    </children>
 </AnchorPane>

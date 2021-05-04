@@ -51,6 +51,11 @@
             </InnerShadow>
          </effect>
       </Label>
+      <ImageView fx:id="birth_date_image" fitHeight="33.0" fitWidth="37.0" layoutX="324.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@sources/calendar.png" />
+         </image>
+      </ImageView>
       <DatePicker fx:id="birth_date" layoutX="92.0" layoutY="250.0" prefHeight="40.0" prefWidth="265.0" promptText="дата рождения" style="-fx-prompt-text-fill: white;" stylesheets="@sources/css.css" />
       <TextField fx:id="last_name" layoutX="92.0" layoutY="191.0" prefHeight="40.0" prefWidth="265.0" promptText="отчество" style="-fx-border-color: &quot;transparent&quot; &quot;transparent&quot; &quot;white&quot; &quot;transparent&quot;; -fx-text-fill: white; -fx-prompt-text-fill: white; -fx-border-width: 2; -fx-background-color: transparent;">
          <font>
@@ -58,11 +63,6 @@
          </font>
       </TextField>
       <ComboBox fx:id="dolzhnost" layoutX="92.0" layoutY="307.0" prefHeight="40.0" prefWidth="265.0" promptText="должность" style="-fx-background-color: transparent;" stylesheets="@sources/css.css" />
-      <ImageView fx:id="birth_date_image" fitHeight="33.0" fitWidth="37.0" layoutX="324.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@sources/calendar.png" />
-         </image>
-      </ImageView>
       <TextField fx:id="telephone" layoutX="644.0" layoutY="250.0" prefHeight="40.0" prefWidth="265.0" promptText="контактный телефон" style="-fx-border-color: &quot;transparent&quot; &quot;transparent&quot; &quot;white&quot; &quot;transparent&quot;; -fx-text-fill: white; -fx-prompt-text-fill: &quot;white&quot;; -fx-border-width: 2; -fx-background-color: transparent;">
          <font>
             <Font name="Microsoft YaHei Light" size="20.0" />
@@ -84,11 +84,13 @@
          </font>
       </TextField>
       <ComboBox fx:id="status" layoutX="644.0" layoutY="307.0" prefHeight="40.0" prefWidth="265.0" promptText="статус" style="-fx-background-color: transparent;" stylesheets="@sources/css.css" />
-      <Button fx:id="back_to_menu" layoutX="26.0" layoutY="26.0" mnemonicParsing="false" onAction="#back_to_menu" prefHeight="42.0" prefWidth="47.0" style="-fx-background-color: transparent;" />
-      <ImageView fx:id="purple_arrow" fitHeight="33.0" fitWidth="47.0" layoutX="28.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@sources/purple_back.png" />
-         </image>
-      </ImageView>
+      <Button fx:id="back_to_menu" layoutX="26.0" layoutY="26.0" mnemonicParsing="false" onAction="#back_to_menu" prefHeight="42.0" prefWidth="47.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fx:id="purple_arrow" fitHeight="33.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@sources/purple_back.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
    </children>
 </AnchorPane>

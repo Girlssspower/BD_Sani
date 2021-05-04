@@ -79,6 +79,11 @@
             </InnerShadow>
          </effect>
       </Label>
+      <ImageView fx:id="birth_date_image" fitHeight="33.0" fitWidth="37.0" layoutX="323.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@sources/calendar.png" />
+         </image>
+      </ImageView>
       <DatePicker fx:id="birth_date" layoutX="91.0" layoutY="238.0" prefHeight="40.0" prefWidth="265.0" promptText="дата рождения" style="-fx-prompt-text-fill: white;" stylesheets="@sources/css.css" />
       <TextField fx:id="last_name" layoutX="91.0" layoutY="179.0" prefHeight="40.0" prefWidth="265.0" promptText="отчество" style="-fx-border-color: &quot;transparent&quot; &quot;transparent&quot; &quot;white&quot; &quot;transparent&quot;; -fx-text-fill: white; -fx-prompt-text-fill: white; -fx-border-width: 2; -fx-background-color: transparent;">
          <font>
@@ -86,11 +91,6 @@
          </font>
       </TextField>
       <ComboBox fx:id="document_type" layoutX="91.0" layoutY="295.0" prefHeight="40.0" prefWidth="265.0" promptText="тип документа" style="-fx-background-color: transparent;" stylesheets="@sources/css.css" />
-      <ImageView fx:id="birth_date_image" fitHeight="33.0" fitWidth="37.0" layoutX="323.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@sources/calendar.png" />
-         </image>
-      </ImageView>
       <Label fx:id="category" layoutX="430.0" layoutY="84.0" text="категория:" textFill="WHITE">
          <font>
             <Font name="Microsoft YaHei Light" size="30.0" />
@@ -121,18 +121,18 @@
             <Font name="Microsoft YaHei Light" size="30.0" />
          </font>
       </Label>
-      <DatePicker fx:id="go" layoutX="429.0" layoutY="226.0" prefHeight="40.0" prefWidth="165.0" promptText="дата заезда" style="-fx-prompt-text-fill: white;" stylesheets="@sources/css.css" />
       <ImageView fx:id="go_image" fitHeight="33.0" fitWidth="37.0" layoutX="561.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@sources/calendar.png" />
          </image>
       </ImageView>
-      <DatePicker fx:id="leave" layoutX="617.0" layoutY="226.0" prefHeight="40.0" prefWidth="170.0" promptText="дата выезда" style="-fx-prompt-text-fill: white;" stylesheets="@sources/css.css" />
+      <DatePicker fx:id="go" layoutX="429.0" layoutY="226.0" prefHeight="40.0" prefWidth="165.0" promptText="дата заезда" style="-fx-prompt-text-fill: white;" stylesheets="@sources/css.css" />
       <ImageView fx:id="leave_image" fitHeight="33.0" fitWidth="37.0" layoutX="754.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@sources/calendar.png" />
          </image>
       </ImageView>
+      <DatePicker fx:id="leave" layoutX="617.0" layoutY="226.0" prefHeight="40.0" prefWidth="170.0" promptText="дата выезда" style="-fx-prompt-text-fill: white;" stylesheets="@sources/css.css" />
       <Label fx:id="sum" layoutX="727.0" layoutY="353.0" text="1 000 000$" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Corbel Bold" size="48.0" />
