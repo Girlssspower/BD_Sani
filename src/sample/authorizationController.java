@@ -11,7 +11,6 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -54,15 +53,17 @@ public class authorizationController {
 
         //это код, который при нажатии на кнопку войти откроет форму "меню"
 
-//        Stage stage = (Stage) authorization.getScene().getWindow();
-//        stage.close();
-//        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
-//        Parent root = (Parent) fxmlLoader.load();
-//        stage = new Stage();
-//        stage.initModality(Modality.APPLICATION_MODAL);
+//        Stage stage;
+//        Parent root;
+//
+//        stage = (Stage) authorization.getScene().getWindow();
+//        root = FXMLLoader.load(getClass().getResource("menu.fxml"));
+//        Scene scene = new Scene(root);
 //        stage.setTitle("Меню");
-//        stage.setScene(new Scene(root));
+//        stage.setScene(scene);
+//        stage.setResizable(false);
 //        stage.show();
+
 
     }
 

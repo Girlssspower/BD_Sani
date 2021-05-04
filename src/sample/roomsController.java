@@ -1,5 +1,9 @@
 package sample;
 
+import javafx.animation.Interpolator;
+import javafx.animation.KeyFrame;
+import javafx.animation.KeyValue;
+import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -8,12 +12,16 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.stage.Modality;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 import java.io.IOException;
 
 public class roomsController {
+
+    @FXML
+    private AnchorPane pane;
 
     @FXML
     private ImageView thin_line; //фиолетовая линия сбоку
@@ -64,28 +72,49 @@ public class roomsController {
 
     @FXML
     void back_to_menu(ActionEvent event) throws IOException {
-        Stage stage = (Stage)  back_to_menu.getScene().getWindow();
-        stage.close();
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
-        Parent root = (Parent) fxmlLoader.load();
-        stage = new Stage();
-        stage.initModality(Modality.APPLICATION_MODAL);
-        stage.setTitle("Меню");
-        stage.setScene(new Scene(root));
-        stage.show();
+
+//        Parent root = FXMLLoader.load(getClass().getResource("menu.fxml"));
+//        Scene scene = back_to_menu.getScene();
+//
+//        root.translateYProperty().set(scene.getHeight());
+//        pane.getChildren().add(root);
+//
+//        Timeline timeline = new Timeline();
+//        KeyValue kv = new KeyValue(root.translateYProperty(), 0, Interpolator.EASE_IN);
+//        KeyFrame kf = new KeyFrame(Duration.seconds(1), kv);
+//        timeline.getKeyFrames().add(kf);
+//        timeline.setOnFinished(event1 -> {
+//            pane.getChildren().remove(pane);
+//        });
+//        timeline.play();
+
+    Stage stage;
+    Parent root;
+
+    stage = (Stage) back_to_menu.getScene().getWindow();
+    root = FXMLLoader.load(getClass().getResource("menu.fxml"));
+    Scene scene = new Scene(root);
+    stage.setTitle("Меню");
+    stage.setScene(scene);
+    stage.setResizable(false);
+    stage.show();
+
+
+
 
     }
 
     @FXML
     void go_info(ActionEvent event) throws IOException {
-        Stage stage = (Stage)  num_2.getScene().getWindow();
-        stage.close();
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("number_info.fxml"));
-        Parent root = (Parent) fxmlLoader.load();
-        stage = new Stage();
-        stage.initModality(Modality.APPLICATION_MODAL);
+        Stage stage;
+        Parent root;
+
+        stage = (Stage) num_2.getScene().getWindow();
+        root = FXMLLoader.load(getClass().getResource("number_info.fxml"));
+        Scene scene = new Scene(root);
         stage.setTitle("Информация о номере");
-        stage.setScene(new Scene(root));
+        stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
 
     }

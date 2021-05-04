@@ -11,9 +11,12 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("menu.fxml"));
+        //поменяй потом то что в кавычках на "authorization.fxml"
         primaryStage.setTitle("Авторизация");
         primaryStage.setScene(new Scene(root, 1000, 691));
+        primaryStage.setResizable(false);
         primaryStage.show();
+
 
     }
 
